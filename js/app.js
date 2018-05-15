@@ -14,9 +14,9 @@ function getInTouch() {
   var newEl = document.createElement('div');
   newEl.setAttribute("id", "content");
   newEl.innerHTML = '<div class="jumbotron">' +
-    '<h2 class="instagram-link">Instagram - @gBatista</h2>' +
-    '<h2 class="twitter-link">Twitter - @gBatista</h2>' +
-    '<h2 class="gmail-link">gBatista@gmail.com</h2>'
+    '<h2 class="instagram-link">Instagram - @spacing_out</h2>' +
+    '<h2 class="twitter-link">Twitter - @GabeDBatista</h2>' +
+    '<h2 class="gmail-link">gabedbatista@gmail.com</h2>'
   '</div>';
 
   el.parentNode.replaceChild(newEl, el);
