@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gabriel Batista</title>
+    <!-- web fonts to make things pretty -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Exo+2" rel="stylesheet">
+    <!-- personal stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="blur"> <!-- transparent background allows for psuedo-blur -->
+
+        <header class="header-background"> <!-- header including logo & nav -->
+          <div class="header-blur">
+            <h1 class="logo">
+              G<span class="red">B</span>
+            </h1>
+            <nav id="site-nav">
+              <ul>
+                <li><a class="active" id="home-link" href="index.html">HOME</a></li>
+                <li><a id="about-link" href="about.html">ABOUT</a></li>
+                <li><a id="portfolio-link" href="portfolio.html">PORTFOLIO</a></li>
+                <li><a id="blog-link" href="blog.html">BLOG</a></li>
+                <li><a id="contact-link" href="contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div id="content">
+          <div class="jumbotron">
+            <h2 class="job-description">Front-End Developer / Designer</h2>
+            <h1 class="name">Gabriel <span class="red">Batista</span></h1>
+            <h3 class="service-description">efficient and practical web solutions & consulting</h3>
+          </div>
+          <div class="cta-btn" onclick="getInTouch()">
+            <a class="cta-link">Get In Touch</a>
+          </div>
+        </div><!-- end content -->
+
+      </div><!-- end blur -->
+    </div><!-- end container -->
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>

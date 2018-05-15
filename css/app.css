@@ -1,0 +1,454 @@
+/* -----------------------------------------
+*
+*    -- Table of Contents:  --
+*
+*  0.0 - CSS Reset
+*  1.0 - Layout
+*  2.0 - Header
+*  3.0 - Text
+*  4.0 - About Page
+*  5.0 - Portfolio Page
+*  6.0 - Blog Pages
+*  7.0 - Contact Page
+*
+*  -------------------------------------- */
+
+
+/* --------------------------------------
+*
+*  0.0 - CSS Reset - This will allow us to start from a stripped down baseline
+*
+*  -------------------------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* --------------------------------------
+*
+*  1.0 - Layout - Page structure and alignment
+*
+*  -------------------------------------- */
+
+.container {
+	background-image: url(../assets/images/laptop-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	overflow: scroll;
+}
+
+.blur,
+.header-blur {
+	background-color: #111111cc;
+	height: 100%;
+	background-attachment: fixed;
+	overflow: scroll;
+}
+
+#content {
+	margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+	box-sizing: border-box;
+}
+
+.left {
+	float: left;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+/* --------------------------------------
+*
+*  2.0 - Header - Page header and navigation
+*
+*  -------------------------------------- */
+
+.header-background {
+	position: fixed;
+	height: 130;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background-image: url(../assets/images/laptop-background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.header-blur {
+	padding: 40px 100px;
+	overflow: hidden;
+}
+
+.logo {
+	display: inline;
+	font-size: 3em;
+}
+
+nav {
+  float: right;
+	line-height: 3em;
+}
+
+nav li {
+  display: inline;
+	padding-left: 15px;
+}
+
+nav li a {
+	padding-bottom: 3px;
+}
+
+.active {
+	color: red;
+	border-bottom: 1px solid red;
+}
+
+
+/* --------------------------------------
+*
+*  3.0 - Text - Size & style
+*
+*  -------------------------------------- */
+
+.logo, a, p, h1, h2, h3, h4 {
+	color: #ccc;
+	font-family: 'Dosis', sans-serif;
+	text-decoration: none;
+	transition: .75s ease;
+}
+
+.logo {
+	font-family: 'Exo 2', sans-serif;
+}
+
+a:hover {
+	color: red;
+}
+
+.red {
+	color: red;
+}
+
+
+
+.name {
+	display: inline;
+	font-size: 5.5em;
+}
+
+.jumbotron {
+	/*text-align: center;*/
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 400px;
+}
+
+.service-description {
+	text-align: right;
+	margin-bottom: 60px;
+}
+
+.job-description {
+	padding-left: 4px;
+}
+
+.cta-btn {
+	display: block;
+}
+
+.cta-link {
+	box-sizing: border-box;
+	display: inline-block;
+	margin-left: 42.5%;
+	margin-right: 42.5%;
+	width: 15%;
+	color: #ccc;
+	padding: 10px 0;
+	border: 1px solid red;
+	background: none;
+	font-size: 1.1em;
+	text-align: center;
+	background-color: red;
+}
+
+.cta-link:hover {
+	background-color: #cccccc;
+	border-color: #cccccc;
+	transition: .5s;
+	cursor: pointer;
+}
+
+/* --------------------------------------
+*
+*	 4.0 - About Page
+*
+* ----------------------------------------- */
+
+.about {
+	margin-top: 175px;
+	margin-bottom: 60px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 15px;
+}
+
+.about-photo {
+	width: 300px;
+	height: 350px;
+	display: inline;
+	border: 1px solid #cccccccc;
+}
+
+.about-txt {
+	width: 62%;
+	float: right;
+	margin-top: 60px;
+	box-sizing: border-box;
+}
+
+.mini-intro {
+	font-size: .9em;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.intro {
+	font-size: 5em;
+}
+
+.about-description p {
+	margin-top: 20px;
+	font-size: 1.1em;
+	font-family: 'Exo 2', sans-serif;
+}
+
+/* --------------------------------------
+*
+*  5.0 Portfolio Page
+*
+* -------------------------------------- */
+
+.portfolio {
+	margin-bottom: 100px;
+	padding: 0 15px;
+	margin-top: 250px;
+}
+
+.portfolio-title {
+	font-size: 4em;
+}
+
+.portfolio-items {
+	max-width: 100%;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.portfolio-item {
+	margin-top: 40px;
+	border: 1px solid #cccccccc;
+	display: inline-block;
+	width: 47%;
+	height: 240px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.portfolio-item-text {
+	height: 210px;
+	width: 90%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #11111188;
+	text-align: right;
+	padding: 15px 5%;
+}
+
+.portfolio-item:hover .portfolio-item-text {
+	opacity: 1;
+}
+
+.portfolio-item-text h2 {
+	margin-top: 150px;
+	font-size: 2em;
+}
+
+.portfolio-item-text p {
+	margin-top: 10px;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.first-work {
+	margin-right: 5%;
+	background-image: url(../assets/images/portfolio-site.jpg);
+}
+
+.next-work {
+	background-image: url(../assets/images/question-mark.png);
+}
+
+
+/* --------------------------------------
+*
+*	 6.0 Blog Pages
+*
+* ----------------------------------------- */
+
+.post {
+	border: 1px solid #111111;
+	background-color: #cccccc;
+	margin-bottom: 40px;
+}
+
+.post-banner {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	border-bottom: 1px solid #111;
+}
+
+.post-title,
+.post-preview {
+	color: #444;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.post-title {
+	font-size: 3em;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.post-title:hover {
+	color: red;
+}
+
+.post-preview {
+	margin-top: 20px;
+	font-size: 1.2em;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.post-footer {
+	background-color: #ff4444;
+	border-radius: 5px;
+	margin-top: 60px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.read-more,
+.post-meta-info {
+	display: inline-block;
+}
+
+.post-meta-info {
+	float: right;
+}
+
+.iframe-wrapper {
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.post-table {
+	width: 100%;
+	margin: 40px 0px;
+}
+
+.post-table caption {
+	font-size: 2em;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 30px;
+}
+
+.post-table td,
+.post-table th {
+	text-align: center;
+	font-family: 'Exo 2', sans-serif;
+	padding-top: 15px;
+}
+
+.post-table th {
+	font-size: 1.1em;
+	color: red;
+	font-weight: bold;
+}
+
+
+/* --------------------------------------
+*
+*	 7.0 Contact
+*
+* ----------------------------------------- */
+
+.twitter-link,
+.instagram-link,
+.gmail-link {
+	text-align: center;
+	font-size: 3em;
+	margin-top: 30px;
+}
